@@ -1,0 +1,68 @@
+[{
+    "id": 0,
+    "otsikko": "Kyselylomake"
+}, {
+    "id": 1,
+    "kysymysteksti": "Ikä?",
+    "type": "number",
+    "name": "ikä",
+    "value": [""]
+}, {
+    "id": 2,
+    "kysymysteksti": "Sukupuoli?",
+    "type": "radio",
+    "name": "sukupuoli",
+    "value": ["Nainen","Mies"]
+}, {
+    "id": 3,
+    "kysymysteksti": "Oletko Haaga-Helian opiskelija?",
+    "type": "radio",
+    "name": "opiskelija",
+    "value": ["Kyllä","Ei"]
+}, {
+    "id": 4,
+    "kysymysteksti": "Minkä vuoden opiskelija olet?",
+    "type": "radio",
+    "name": "vuosi",
+    "value": ["1","2","3","4","olen ollut täällä liian pitkään"]
+}, {
+    "id": 5,
+    "kysymysteksti": "Kuinka paljon käytät opiskelijayhdistyksen tiloja (kellarikerroksen oleskelutila)?",
+    "type": "radio",
+    "name": "maara",
+    "value": ["Erittäin vähän","Vähän","Jonkin verran","Paljon","Erittäin paljon"]
+}, {
+    "id": 6,
+    "kysymysteksti": "Miten tilaa voisi kehittää?",
+    "type": "textarea",
+    "name": "kehitys",
+    "esimerkki": "Lisää nukkumapaikkoja",
+    "value": [""]
+}, {
+    "id": 7,
+    "kysymysteksti": "Mistä olet saanut tietoa Helgan tiloista?",
+    "type": "text",
+    "name": "tietoa",
+    "esimerkki": "Tutori",
+    "value": [""]
+}, {
+    "id": 8,
+    "kysymysteksti": "Kuinka tervetulleeksi tunnet itsesi käydessä Helgan tiloissa?",
+    "type": "emoji",
+    "name": "tunne",
+    "value": ["1","2","3","4","5"]
+}, {
+    "id": 9,
+    "kysymysteksti": "Kuinka tärkeäksi koet oppilaille suunnatut oleskelutilat?",
+    "type": "radio",
+    "name": "tärkeys",
+    "value": ["En lainkaan","Vähän","En tunne mitään oleskelutiloja kohtaan","Melko","Erittäin"]
+}, {
+    "id": 10,
+    "kysymysteksti": "Muuta huomioitavaa",
+    "type": "textarea",
+    "name": "muuta",
+    "esimerkki": "Jotain kivaa!",
+    "value": [""]    
+}
+]

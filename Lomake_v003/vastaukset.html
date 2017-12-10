@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stylish Portfolio - Start Bootstrap Template</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="main.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="chart.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109843649-1"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/vastaukset.css" rel="stylesheet">
+
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Numeric JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+
+</head>
+
+<body style="background-color: white;">
+    
+    <section class="portfolio pohja">
+        <div class="container-fluid">
+            
+            <h3>Vastaus 1</h3>
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <th scope="row">Kysymys 1</th>
+                        <td>What the fuck did you just fucking say about me, you little bitch? I’ll have you know I graduated top of my class in the Navy Seals, and I’ve been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare and I’m the top sniper in the entire US armed forces. You are nothing to me but just another target. I will wipe you the fuck out with precision the likes of which has never been seen before on this Earth, mark my fucking words. You think you can get away with saying that shit to me over the Internet? Think again, fucker. As we speak I am contacting my secret network of spies across the USA and your IP is being traced right now so you better prepare for the storm, maggot. The storm that wipes out the pathetic little thing you call your life. You’re fucking dead, kid. I can be anywhere, anytime, and I can kill you in over seven hundred ways, and that’s just with my bare hands. Not only am I extensively trained in unarmed combat, but I have access to the entire arsenal of the United States Marine Corps and I will use it to its full extent to wipe your miserable ass off the face of the continent, you little shit. If only you could have known what unholy retribution your little “clever” comment was about to bring down upon you, maybe you would have held your fucking tongue. But you couldn’t, you didn’t, and now you’re paying the price, you goddamn idiot. I will shit fury all over you and you will drown in it. You’re fucking dead, kiddo.</td>
+
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Kysymys 2</th>
+                        <td>Woah se oli siinä</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">kysymys 3</th>
+                        <td>Larry was here</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+
+
+            <div id="myDiv"></div>
+
+            <div id="container" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                    <h4>
+                        <strong>PsykoositTulille</strong>
+                    </h4>
+                    <p>Ratapihantie 13
+                        <br>Helsinki, 00520</p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i> 050 533 9069</li>
+                        <li>
+                            <i class="fa fa-envelope-o fa-fw"></i>
+                            <a href="mailto:name@example.com">psykoosit@tulille.fi</a>
+                        </li>
+                    </ul>
+                    <br>
+
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; PsykoositTulille</p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
+        <i class="fa fa-chevron-up fa-fw fa-1x"></i>
+      </a>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.js"></script>
+
+    <script>
+        var data = [{
+            values: [19, 26, 55],
+            labels: ['Residential', 'Non-Residential', 'Utility'],
+            type: 'pie'
+        }];
+
+        Plotly.newPlot('myDiv', data);
+
+    </script>
+    
+    <script>
+        var x = [];
+        var y = [];
+        for (var i = 0; i < 500; i++) {
+            x[i] = Math.random();
+            y[i] = Math.random();
+        }
+
+        var miehet = {
+            x: x,
+            type: 'histogram',
+        };
+
+        var naiset = {
+            x: y,
+            type: 'histogram',
+        };
+
+        var data = [miehet, naiset];
+        Plotly.newPlot('myDiv3', data);
+
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-109843649-1');
+
+    </script>
+
+    <script>
+        var categories = [
+            '0-15', '16-17',
+            '18', '19', '20', '21', '22',
+            '23', '24', '25', '26', '27',
+            '28', '29', '30', '31-35', '36-40',
+            '41-50', '51 + '
+        ];
+
+        Highcharts.chart('container', {
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: "Vastanneiden ihmisten ikä / sukupuolijakauma"
+            },
+            subtitle: {
+                text: ""
+            },
+            xAxis: [{
+                categories: categories,
+                reversed: false,
+                labels: {
+                    step: 1
+                }
+            }, { // mirror axis on right side
+                opposite: true,
+                reversed: false,
+                categories: categories,
+                linkedTo: 0,
+                labels: {
+                    step: 1
+                }
+            }],
+            yAxis: {
+                title: {
+                    text: null
+                },
+                labels: {
+                    formatter: function() {
+                        return Math.abs(this.value) + 'kpl';
+                    }
+                }
+            },
+
+            plotOptions: {
+                series: {
+                    stacking: 'normal'
+                }
+            },
+
+            tooltip: {
+                formatter: function() {
+                    return '<b>' + this.series.name + ', age ' + this.point.category + '</b><br/>' +
+                        'Population: ' + Highcharts.numberFormat(Math.abs(this.point.y), 0);
+                }
+            },
+
+            series: [{
+                name: 'Miehet',
+                data: [-0, -0, -3, -5, -20, -14, -11, -24, -4, -7, -0, -0, -0, -0, -0, -0, -0, -0, -0]
+            }, {
+                name: 'Naiset',
+                data: [0, 1, 4, 2, 10, 24, 22,
+                    14, 11, 13, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0
+                ]
+            }]
+        });
+
+    </script>
+
+
+</body>
+
+</html>
